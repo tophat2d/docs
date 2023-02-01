@@ -1,0 +1,6 @@
+[book]
+authors = ["Marek Maškarinec"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Tophat documentation"

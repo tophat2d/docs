@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for f in ~/dev/tophat/umka/*.um; do
+	NAME=`basename $f`
+	umka ~/dev/mmdoc/mmdoc.um \
+		-u "https://git.sr.ht/~mrms/tophat/tree/main/item/umka/$NAME#L%d" \
+		$f > $NAME.md
+done
