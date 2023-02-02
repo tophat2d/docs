@@ -1,0 +1,3 @@
+[submodule "src/api/mmdoc"]
+	path = src/api/mmdoc
+	url = https://git.sr.ht/~mrms/mmdoc
