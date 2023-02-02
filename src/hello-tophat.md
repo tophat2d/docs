@@ -1,8 +1,8 @@
 # Hello Tophat!
 
 This chapter shows you how to make a simple hello world program in tophat.
-Firstly make a new folder.  In that folder open a file `main.um`, open it in
-your favorite text editor and write the following in:
+Firstly make a new folder.  In that folder create a file called `main.um`, open
+it in your favorite text editor and write the following in:
 
 ```
 import (
@@ -24,7 +24,7 @@ Now run the file.  On linux you would `cd` into the directory and run `tophat`.
 On windows, open `tophat` and choose the directory or make a shortcut to tophat
 in the folder, so you can run the game by just double-clicking it.
 
-Does everything work? Fine. Is there a problem? Contact me at
+Does everything work? Great! Is there a problem? Contact me at
 [marek@mrms.cz](mailto:marek@mrms.cz).
 
 Now let's explain all the parts of the example.
