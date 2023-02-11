@@ -32,5 +32,6 @@
 	- [shader.um](api/shader.um.md)
 	- [signal.um](api/signal.um.md)
 	- [th.um](api/th.um.md)
+    - [tilemap.um](api/tilemap.um.md)
 	- [utf8.um](api/utf8.um.md)
 	- [window.um](api/window.um.md)
