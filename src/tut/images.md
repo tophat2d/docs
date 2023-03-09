@@ -33,24 +33,29 @@ Full example:
 ```
 import (
 	"image.um"
+    "signal.um"
 	"th.um"
 	"window.um"
 )
 
-fn main() {
+var (
+    apple: image.Image
+)
+
+fn init*() {
 	window.setup()
 
-	apple := image.load("gfx/apple.png")
+	apple = image.load("gfx/apple.png")
 	if !apple.validate() {
 		error("Could not load gfx/apple.png")
 	}
 
-	for window.cycle() {
+	window.onFrame.register(signal.Callback{
 		apple.draw(th.Transform{
 			p: th.Vf2{5, 20},
 			s: th.Vf2{1, 1},
 			r: 45 })
-	}
+	}, null)
 }
 ```
 

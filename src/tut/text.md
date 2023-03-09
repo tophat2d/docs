@@ -28,14 +28,18 @@ import (
 	"window.um"
 )
 
-fn main() {
+var (
+    f: font.Font
+)
+
+fn init*() {
 	window.setup()
 
 	f := font.load("unifont.ttf", 32, font.filteringNearest)
 
-	for window.cycle() {
+	window.onFrame.register(signal.Callback{
 		canvas.drawText("Hello tophat using canvas.um", th.Vf2{1, 1}, th.black, 1)
 		f.draw("Hello tophat using unifont", th.Vf2{1, 7}, th.black, 1)
-	}
+	}, null)
 }
 ```

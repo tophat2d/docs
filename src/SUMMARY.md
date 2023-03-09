@@ -8,10 +8,12 @@
 	- [Tophat tips](tips.md)
 
 - [Tutorials](tut/README.md)
+    - [Program structure](tut/structure.md)
 	- [Loading and drawing images](tut/images.md)
 	- [Keyboard input](tut/keyboard.md)
 	- [Drawing text](tut/text.md)
 	- [Playing sounds](tut/audio.md)
+    - [Making web builds](tut/web.md)
 
 - [API reference](api/README.md)
     - [Sound](api/sound.md)

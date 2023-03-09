@@ -26,14 +26,15 @@ can use the `is*` fuctions. Mouse position can be retrieved using the
 ```
 import (
 	"input.um"
+    "signal.um"
 	"th.um"
 	"window.um"
 )
 
-fn main() {
+fn init*() {
 	window.setup()
 
-	for window.cycle() {
+	window.onFrame.register(signal.Callback{
 		for i:=0; i < 256; i++ {
 			if input.isPressed(char(i)) {
 				printf("%d is pressed\n", i)
@@ -43,6 +44,6 @@ fn main() {
 		printf("the user wrote: %s\n", input.getStr())
 		
 		printf("the cursor is at %s\n", repr(input.getMousePos()))
-	}
+	}, null)
 }
 ```

@@ -35,15 +35,12 @@ import (
 	"window.um"
 )
 
-fn main() {
+fn init*() {
 	window.setup()
 
 	mySound := audio.load("sfx/music.mp3")
 	mySound.setLooping(true)
 	mySound.setVol(0.5)
 	mySound.play()
-
-	// this is just to keep the program running
-	for window.cycle() { }
 }
 ```
