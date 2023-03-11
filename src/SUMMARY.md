@@ -14,6 +14,7 @@
 	- [Drawing text](tut/text.md)
 	- [Playing sounds](tut/audio.md)
     - [Making web builds](tut/web.md)
+    - [Sprite sheet animations](tut/spritesheet.md)
 
 - [API reference](api/README.md)
     - [Sound](api/sound.md)
