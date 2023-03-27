@@ -9,11 +9,11 @@ the prebuilt binaries, it is a very simple process.
 > commands that can be run as a normal user, latter is used for commands
 > requiring root privileges.
 
-First you have to download tophat from [this page](https://th.mrms.cz/dl).  You
+First you have to download tophat from [this page](https://tophat2d.dev/dl).  You
 can do that manually or using this `curl` command.
 
 ```sh
-$ curl https://th.mrms.cz/dl/tophat-linux -o tophat
+$ curl https://tophat2d.dev/dl/tophat-linux -o tophat
 ```
 
 When you successfully download the binary, the next step is to install it to a
@@ -27,7 +27,7 @@ To check if tophat was installed correctly, run `tophat version`.
 
 ## Installing tophat on Windows
 
-Download the tophat exe from the [downloads page](https://th.mrms.cz/dl).  Then
+Download the tophat exe from the [downloads page](https://tophat2d.dev/dl).  Then
 move it to a folder of your liking.  Whenever you want to make a tophat
 project, it is recommended to make a shortcut to tophat in the project
 directory. This way you won't have to use the file dialog every time you run

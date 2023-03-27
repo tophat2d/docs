@@ -5,7 +5,7 @@ Tophat games can be exported to run on the web.
 ## Linux
 
 On Linux you can use the
-[`th_emscripten_link`](https://th.mrms.cz/dl/th_emscripten_link) script.  When
+[`th_emscripten_link`](https://tophat2d.dev/dl/th_emscripten_link) script.  When
 passed files, the script will make a web build of your game and save it to the
 `wasm-out` directory.  Example:
 

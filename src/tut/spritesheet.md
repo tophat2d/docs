@@ -87,4 +87,4 @@ fn init*() {
 }
 ```
 
-You can see the full result [here](https://th.mrms.cz/examples/anim-tut).
+You can see the full result [here](https://tophat2d.dev/examples/anim-tut).

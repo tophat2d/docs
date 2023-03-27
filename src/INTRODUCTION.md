@@ -7,5 +7,5 @@ for using tophat and reference for tophat's Umka API.
 
 Tophat is a 2d game library for the
 [Umka](https://github.com/vtereshkov/umka-lang) programming language. It is
-small and simple to use.  You can visit the [homepage](https://th.mrms.cz) at
-th.mrms.cz.
+small and simple to use.  You can visit the [homepage](https://tophat2d.dev) at
+tophat2d.dev.

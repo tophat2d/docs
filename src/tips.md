@@ -20,7 +20,7 @@
 
 > The API reference is accessible from your terminal like this:
 > ```
-> $ curl https://docs.th.mrms.cz/api/module.um.md
+> $ curl https://docs.tophat2d.dev/api/module.um.md
 > ```
 >
 > I recommend making an alias for this.
