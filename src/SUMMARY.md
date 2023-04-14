@@ -28,7 +28,6 @@
     - [input.um](api/input.um.md)
     - [particles.um](api/particles.um.md)
     - [shader.um](api/shader.um.md)
-    - [utf8.um](api/utf8.um.md)
     - [coll.um](api/coll.um.md)
     - [ent.um](api/ent.um.md)
     - [misc.um](api/misc.um.md)
