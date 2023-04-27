@@ -15,6 +15,7 @@
 	- [Playing sounds](tut/audio.md)
     - [Making web builds](tut/web.md)
     - [Sprite sheet animations](tut/spritesheet.md)
+    - [GUI](tut/ui.md)
 
 - [API reference](api/README.md)
     - [anim.um](api/anim.um.md)
