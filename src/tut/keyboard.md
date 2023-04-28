@@ -9,7 +9,7 @@ keyboard. `getStr` returns a string typed by the user last cycle.
 
 Example:
 
-```
+```umka
 for i:=0; i < 256; i++ {
 	if input.isPressed(char(i)) {
 		printf("%d is pressed\n", i)
@@ -23,7 +23,7 @@ Getting mouse input is also simple. Mouse buttons act as normal keys, so you
 can use the `is*` fuctions. Mouse position can be retrieved using the
 `getMousePos` function.
 
-```
+```umka
 import (
 	"input.um"
     "signal.um"

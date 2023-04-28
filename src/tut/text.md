@@ -10,17 +10,17 @@ The second one uses tophat's [font.um](/api/font.um.md) module,
 which provides functions for operating with TrueType fonts. You can obtain
 a `Font` like this:
 
-```
+```umka
 f := font.load("unifont.ttf", 32)
 ```
 
 Then you can just use it's `draw` method to draw text. Example:
 
-```
+```umka
 f.draw("Hello tophat", th.Vf2{20, 20}, th.green)
 ```
 
-```
+```umka
 import (
 	"canvas.um"
 	"font.um"

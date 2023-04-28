@@ -4,7 +4,7 @@ This chapter shows you how to make a simple hello world program in tophat.
 Firstly make a new folder.  In that folder create a file called `main.um`, open
 it in your favorite text editor and write the following in:
 
-```
+```umka
 import (
 	"canvas.um"
 	"th.um"
@@ -29,7 +29,7 @@ Does everything work? Great! Is there a problem? Contact me at
 
 Now let's explain all the parts of the example.
 
-```
+```umka
 import (
 	"canvas.um"
 	"th.um"
@@ -43,20 +43,20 @@ are tophat builtin modules.  This means you can import them even though they
 aren't on the file system.  All modules have their documentation available
 [here](api/README.md).
 
-```
+```umka
 fn main() {
 ```
 
 This declares the `main` function. It is the main entry point of your game.
 
-```
+```umka
 	window.setup("Hello tophat!", 600, 600)
 ```
 
 This function call creates a window. It will set the title to "Hello tophat!"
 and the dimensions to 600x600.
 
-```
+```umka
 	for window.cycle() {
 ```
 
@@ -66,7 +66,7 @@ input. If you don't call this, nothing will work. The function returns `true`
 while the window is open. This way you can put deinitialization code after the
 loop.
 
-```
+```umka
 		canvas.drawText("Hello tophat!", th.Vf2{ 1, 1 }, th.black, 2)
 ```
 

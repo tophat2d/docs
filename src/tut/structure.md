@@ -14,7 +14,7 @@ In this function, you can set up the window, load resources and register to the
 frame.  The following script will print "init" when it is launched and then
 follow up by printing "frame" on every frame.
 
-```
+```umka
 import (
     "signal.um"
     "window.um"

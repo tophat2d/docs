@@ -26,7 +26,7 @@
 > I recommend making an alias for this.
 
 > You can center a rectangle `i` inside rectangle `o` using this formula:
-> ```
+> ```umka
 >	i.x = o.x + (o.w - i.w) / 2
 >	i.y = o.y + (o.h - i.h) / 2
 > ```

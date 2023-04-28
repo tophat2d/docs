@@ -3,7 +3,7 @@
 You can see the result of this tutorial
 [here](https://tophat2d.dev/examples/ui).
 
-```
+```umka
 var gui: ui.Gui
 var tbName, tbPwd: ui.TextBox
 ```
@@ -12,7 +12,7 @@ Here we declare three variables. `gui` is of the type `ui.Gui`, which holds the
 whole UI instance. `tbName` and `tbPwd` are both textboxes, which will be used
 later to get input from the user.
 
-```
+```umka
 	gui = ui.mk({ 0, 0, 200, 200 }, ui.getDefaultStyle())
 ```
 
@@ -20,7 +20,7 @@ This initializes the UI instance. The first argument is the rect the gui will
 occupy, the second is the style used. For now you can use tophat's default
 style available using `ui.getDefaultStyle()`.
 
-```
+```umka
 		layout := ui.LayoutFn{
             ...
 		}
@@ -30,14 +30,14 @@ This is the layout function, which builds the UI by calling methods on the
 `gui` struct. It is ran two times - first time to evaluate user input and
 second time to draw the user interface.
 
-```
+```umka
 			gui.stack({ padding: 10 })
 ```
 
 First we use the `stack` container. It puts all the other elements on top of
 each other. You can also apply padding to it.
 
-```
+```umka
 			gui.box({
 				dimension: 10,
 				dir: ui.BoxDirectionDown,
@@ -53,7 +53,7 @@ to each other. The configuration specifies three things:
 * `dimension` - this specifies the number of pixels to grow by. This is needed
   as `ui.BoxGrowDimension` is specified
 
-```
+```umka
 				gui.label("User name:", { centerY: true })
 				gui.textBox(&tbName)
 
@@ -63,7 +63,7 @@ to each other. The configuration specifies three things:
 
 Now we can add the textboxes into the container.
 
-```
+```umka
 			gui.dupStyle()
 			gui.getStyle().containerBox.color = 0
 
@@ -84,7 +84,7 @@ removed as not to cover the textboxes. Then we push another box. It grows to
 the right and uses the subdivision grow type. We specify that there will be two
 elements in it.
 
-```
+```umka
 				if gui.qbutton("Cancel") {
 					window.quit()
 				}
@@ -99,7 +99,7 @@ Now we can just add the two buttons. We use the method `qbutton`, which adds a
 button with a label.
 
 
-```
+```umka
 			gui.popContainer()
 			gui.popContainer()
 
@@ -112,7 +112,7 @@ button with a label.
 Now we have to pop all the styles and containers. At the end of the layout
 function, `len(gui.container)` should equal 1.
 
-```
+```umka
 		gui.eval(layout)
 		gui.draw(layout)
 ```
@@ -123,7 +123,7 @@ This applies the layout with our UI instance `gui`.
 
 Full code:
 
-```
+```umka
 import (
 	"th.um"
 	"ui.um"

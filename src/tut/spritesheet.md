@@ -5,7 +5,7 @@ builtin tophat feature, which makes this a very easy task.
 
 We will need to declare these global variables:
 
-```
+```umka
 var (
 	spriteSheet: image.Image
 	atl: atlas.Atlas
@@ -15,7 +15,7 @@ var (
 
 First you have to load the image with your spritesheet:
 
-```
+```umka
 	spriteSheet = image.load("spritesheet.png")
 ```
 
@@ -24,7 +24,7 @@ to operate with images that store subimages in a grid.  The first argument to
 the mk function is the image we will create the atlas from.  The second
 argument are the dimensions of the atlas.
 
-```
+```umka
 	atl = atlas.mk(spriteSheet, th.Vf2{ 6, 1 })
 ```
 
@@ -33,7 +33,7 @@ argument is the atlas with the spritesheet.  The second argument is the fps
 count.  You can also add optional arguments specifying start and end frame and
 the start offset.
 
-```
+```umka
 	anm = anim.mk(atl, 1)
 ```
 
@@ -41,14 +41,14 @@ We now have the animation ready.  Now we just have to call it's `animate`
 method.  The only argument it the time.  We can use just `th.time` in this
 case.
 
-```
+```umka
 		anm.animate(th.time)
 ```
 
 The `animate` method uses the the base image's `crop` method to select the
 current frame.  This means we can now just draw the image.
 
-```
+```umka
 		spriteSheet.draw(th.mkTransform(th.vf2f(1)))
 ```
 
@@ -56,7 +56,7 @@ current frame.  This means we can now just draw the image.
 
 Full program:
 
-```
+```umka
 import (
 	"anim.um"
 	"atlas.um"
