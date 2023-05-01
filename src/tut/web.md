@@ -26,4 +26,5 @@ result is in the `wasm-out` directory.
 
 ## Windows
 
-Making web builds on windows isn't done yet (To: ~ske)
+Currently there is no way of making web builds directly on windows. It is
+recommended to make them using WSL2.
