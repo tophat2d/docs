@@ -20,9 +20,9 @@ That's all. The image is now ready to be drawn. You can do that using it's draw
 method. You need to pass it a transform.
 
 ```umka
-apple.draw(th.Transform{
-	p: th.Vf2{5, 20},
-	s: th.Vf2{1, 1},
+apple.draw({
+	p: {5, 20},
+	s: {1, 1},
 	r: 45 })
 ```
 
@@ -50,12 +50,12 @@ fn init*() {
 		error("Could not load gfx/apple.png")
 	}
 
-	window.onFrame.register(signal.Callback{
-		apple.draw(th.Transform{
-			p: th.Vf2{5, 20},
-			s: th.Vf2{1, 1},
+	window.onFrame.register({
+		apple.draw({
+			p: {5, 20},
+			s: {1, 1},
 			r: 45 })
-	}, null)
+	})
 }
 ```
 

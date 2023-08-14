@@ -186,6 +186,6 @@ fn init*() {
 		
 		gui.eval(layout)
 		gui.draw(layout)
-	}, null)
+	})
 }
 ```

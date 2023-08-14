@@ -25,8 +25,8 @@ fn init*() {
 
     printf("init\n")
 
-    window.onFrame.register(signal.Callback{
+    window.onFrame.register({
         printf("frame\n")
-    }, null)
+    })
 }
 ```

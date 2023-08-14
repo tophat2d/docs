@@ -34,7 +34,7 @@ import (
 fn init*() {
 	window.setup()
 
-	window.onFrame.register(signal.Callback{
+	window.onFrame.register({
 		for i:=0; i < 256; i++ {
 			if input.isPressed(char(i)) {
 				printf("%d is pressed\n", i)
@@ -44,6 +44,6 @@ fn init*() {
 		printf("the user wrote: %s\n", input.getStr())
 		
 		printf("the cursor is at %s\n", repr(input.getMousePos()))
-	}, null)
+	})
 }
 ```

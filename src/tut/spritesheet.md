@@ -80,10 +80,10 @@ fn init*() {
 	atl = atlas.mk(spriteSheet, th.Vf2{ 6, 1 })
 	anm = anim.mk(atl, 1)
 
-	window.onFrame.register(signal.Callback{
+	window.onFrame.register({
 		anm.animate(th.time)
 		spriteSheet.draw(th.mkTransform(th.vf2f(1)))
-	}, null)
+	})
 }
 ```
 
