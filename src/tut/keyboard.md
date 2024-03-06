@@ -26,7 +26,7 @@ can use the `is*` fuctions. Mouse position can be retrieved using the
 ```umka
 import (
 	"input.um"
-    "signal.um"
+	"signal.um"
 	"th.um"
 	"window.um"
 )
