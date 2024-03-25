@@ -1,8 +1,5 @@
 # ui.um tutorial
 
-You can see the result of this tutorial
-[here](https://tophat2d.dev/examples/ui).
-
 ```umka
 var gui: ui.Gui
 var tbName, tbPwd: ui.TextBox
