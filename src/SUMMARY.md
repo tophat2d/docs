@@ -7,16 +7,6 @@
 	- [Hello Tophat!](hello-tophat.md)
 	- [Tophat tips](tips.md)
 
-- [Tutorials](tut/README.md)
-    - [Program structure](tut/structure.md)
-	- [Loading and drawing images](tut/images.md)
-	- [Keyboard input](tut/keyboard.md)
-	- [Drawing text](tut/text.md)
-	- [Playing sounds](tut/audio.md)
-    - [Making web builds](tut/web.md)
-    - [Sprite sheet animations](tut/spritesheet.md)
-    - [GUI](tut/ui.md)
-
 - [API reference](api/README.md)
     - [anim.um](api/anim.um.md)
     - [atlas.um](api/atlas.um.md)
