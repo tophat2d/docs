@@ -58,7 +58,7 @@ This function call creates a window. It will set the title to "Hello tophat!"
 and the dimensions to 600x600.
 
 ```umka
-    window::onFrame.register({
+	window::onFrame.register({
 ```
 
 This registers a callback to the `onFrame` signal. What this means is that the
