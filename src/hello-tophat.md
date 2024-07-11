@@ -15,7 +15,7 @@ fn init*() {
 	window::setup("Hello tophat!", 600, 600)
 
 	window::onFrame.register({
-		canvas::drawText("Hello tophat!", { 1, 1 }, th.black, 2)
+		canvas::drawText("Hello tophat!", { 1, 1 }, th::black, 2)
 	})
 }
 ```
@@ -66,7 +66,7 @@ code in the brackets will be called on every frame. This is you game's main
 loop.
 
 ```umka
-		canvas::drawText("Hello tophat!", { 1, 1 }, th.black, 2)
+		canvas::drawText("Hello tophat!", { 1, 1 }, th::black, 2)
 ```
 
 This function draws the text `Hello tophat!` at position `1, 1`, with black
