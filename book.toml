@@ -3,4 +3,3 @@ authors = ["Marek Maškarinec", "skejeton"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Tophat documentation"
